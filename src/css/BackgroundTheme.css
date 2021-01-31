@@ -1,0 +1,53 @@
+.subtitle-strip {
+  background-color: white;
+  height: 125px;
+  display: flex;
+  font-size: 26px;
+  flex-wrap: wrap;
+  color: #003262;
+  padding:10px;
+}
+
+.campus-landscape {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 220px;
+  width: 100%;
+}
+
+.logo {
+  object-fit: contain;
+  width: 20%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* word styles */
+.subforum-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: georgia;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: georgia;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: #fff;
+  max-width: 400px;
+  width: 400px;
+  word-wrap: break-word;
+  margin-left: auto;
+}
+.entire-background-theme {
+  display: flex;
+  flex-direction: column;
+}
