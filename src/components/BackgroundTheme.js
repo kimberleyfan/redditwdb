@@ -8,7 +8,7 @@ const BackgroundTheme = (props) => {
   return (
     <div className="entire-background-theme">
       <img src={Skyline} className="campus-landscape"></img>
-      <Link to="/home">
+      <Link to="/">
       <div className="subtitle-strip">
         <img src={Logo} className="logo">
         </img>

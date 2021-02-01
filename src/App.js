@@ -16,7 +16,7 @@ function App() {
         <Switch>
         <Route path="/home/:id" component={FullPostPage}>
           </Route>
-          <Route exact path="/home" component = {BrowsePage}> 
+          <Route exact path="/" component = {BrowsePage}> 
             <BrowsePage />
           </Route> 
         </Switch>
