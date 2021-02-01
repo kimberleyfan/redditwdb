@@ -4,7 +4,7 @@ import BackgroundTheme from "../components/BackgroundTheme.js";
 import CardSummary from "../components/CardSummary.js";
 import {Link} from 'react-router-dom';
 
-const obj = require("/Users/kimberley/wdb-dev-proj/frontend-project/src/Data.json");
+const obj = require("../Data.json");
 
 function listOfPosts(posts) {
   return (
