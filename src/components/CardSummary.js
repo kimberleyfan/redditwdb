@@ -38,10 +38,8 @@ const CardSummary = ({post}) => {
     return (
 
       <div className="card">
-        <a href={`/fullpost/${post.id}`}></a>
         <div className="left-column">
-          <p class="grey-text">
-    Posted by {post.author} {dateDiff(parseDate(post.published), parseDate(dateRightNow()))} days ago
+          <p class="grey-text"> Posted by {post.author} {dateDiff(parseDate(post.published), parseDate(dateRightNow()))} days ago
           </p>
           <Truncate
                     className="title"

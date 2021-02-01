@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "../css/BrowsePage.css";
 import BackgroundTheme from "../components/BackgroundTheme.js";
 import CardSummary from "../components/CardSummary.js";
-import FullPost from "../components/FullPost";
 import {Link} from 'react-router-dom';
 
 const obj = require("/Users/kimberley/wdb-dev-proj/frontend-project/src/Data.json");

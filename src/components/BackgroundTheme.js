@@ -5,7 +5,6 @@ import {Link} from 'react-router-dom';
 import Logo from "../img/berkeley-logo.png";
 
 const BackgroundTheme = (props) => {
-  //check prop
   return (
     <div className="entire-background-theme">
       <img src={Skyline} className="campus-landscape"></img>

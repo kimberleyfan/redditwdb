@@ -4,31 +4,6 @@ import "../css/FullPost.css";
 
 const obj = require("/Users/kimberley/wdb-dev-proj/frontend-project/src/Data.json");
 
-// function listOfComments(posts) {
-//     return (
-//       <div>
-//           {posts.map((post) => {(
-            
-//                 {post.map((comments => {
-//                     return (
-//                     <div>
-//                         <div>
-//                             <div>comments.author </div> 
-//                             <div>comments.content</div>
-//                         </div>
-//                         <div>comments.upvotes</div>
-//                         <div>comments.downvotes</div>
-//                     </div>
-//                     )}));
-//                              })});
-//         </div>
-        
-//     }
-//     )
-//     }
-    
-//grab which ID was passed in in the url)
-// {FullPost(obj["posts"][${id}])}
 function FullPost(match) {
     const postid = match.params.id;
     const posts = obj["posts"];
@@ -37,8 +12,7 @@ function FullPost(match) {
       if ((individual.id)==postid){
         post = individual;
     }}
-    // let currpost = posts.filter((post)=> postid==post.id)
-    
+    // let currpost = posts.filter((post)=> postid==post.id)    
   return (
     
       <div className="fullcard">
@@ -69,8 +43,8 @@ function listOfComments(comments) {
             <div className="each-comment">    
               <p className="comment-content">{comment.content}</p>
               <div className="comment-votes">
-                <p> +{comment.upvotes}</p>
-                <p> -{comment.downvotes}</p>
+                <p className="comvotes"> +{comment.upvotes}</p>
+                <p className="comvotes"> -{comment.downvotes}</p>
               </div>
             </div>
             </div>
