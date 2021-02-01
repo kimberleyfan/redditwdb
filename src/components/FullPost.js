@@ -2,7 +2,7 @@ import {parseDate, dateDiff, dateRightNow} from "../components/CardSummary.js";
 import "../components/CardSummary.js";
 import "../css/FullPost.css";
 
-const obj = require("/Users/kimberley/wdb-dev-proj/frontend-project/src/Data.json");
+const obj = require("../Data.json");
 
 function FullPost(match) {
     const postid = match.params.id;

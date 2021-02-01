@@ -1,9 +1,8 @@
 import React from "react";
 import "../css/CardSummary.css";
-import PropTypes from 'prop-types';
 import Truncate from 'react-truncate';
  
-const obj = require("/Users/kimberley/wdb-dev-proj/frontend-project/src/Data.json");
+export const obj = require("../Data.json");
 
 //source for date manipulation: https://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
 
