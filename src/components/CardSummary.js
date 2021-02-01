@@ -1,6 +1,11 @@
 import React from "react";
 import "../css/CardSummary.css";
+import PropTypes from 'prop-types';
+import Truncate from 'react-truncate';
+ 
 const obj = require("/Users/kimberley/wdb-dev-proj/frontend-project/src/Data.json");
+
+//source for date manipulation: https://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
 
 export const parseDate = (str) => {
   var mdy = str.toString().split('/');
@@ -14,7 +19,6 @@ export const dateDiff = (first, second) => {
 export const dateRightNow = () => {
   var today = new Date();
   var dd = today.getDate();
-
   var mm = today.getMonth()+1; 
   var yyyy = today.getFullYear();
   if(dd<10) {
@@ -28,9 +32,9 @@ export const dateRightNow = () => {
   today = mm+'/'+dd+'/'+yyyy;
   return today
 }
+//source for line truncation: ttps://www.npmjs.com/package/react-truncate 
 
 const CardSummary = ({post}) => {
-
     return (
 
       <div className="card">
@@ -39,11 +43,18 @@ const CardSummary = ({post}) => {
           <p class="grey-text">
     Posted by {post.author} {dateDiff(parseDate(post.published), parseDate(dateRightNow()))} days ago
           </p>
-          <p class="title">{post.title}</p>
-          <p class="grey-text" numberOfLines={1}>
-              {post.content.length < 213
-                ? `${post.content}`
-                : `${post.content.substring(0, 213)}`}...</p>
+          <Truncate
+                    className="title"
+                    lines={1}
+                    ellipsis={(
+                        <span>...</span>
+                    )}>{post.title}</Truncate>
+          <Truncate
+                    className="grey-text"
+                    lines={3}
+                    ellipsis={(
+                        <span>...</span>
+                    )}>{post.content}...</Truncate>
         </div>
         <div className="right-column"> 
           <p>upvotes: {post.upvotes}</p>
@@ -54,4 +65,5 @@ const CardSummary = ({post}) => {
     );
   };
   
+
 export default CardSummary;

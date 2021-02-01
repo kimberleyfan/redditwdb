@@ -1,5 +1,72 @@
-.divider{
-    border-top-width: 2px;
-    border-top-color: grey;
-    
+.main-text{
+    color: black;
+    font-size:17px;
 }
+.votes{
+    margin:0px;
+    color:grey;
+}
+.fullcard {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    font-size: 20px;
+    max-width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grey-text{
+    color: grey;
+    font-size: 15px;
+    display: flex;
+    align-content: flex-end;
+    max-height: inherit;
+    margin: 0px;
+  }
+  .title{
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 10px;
+    margin-top:10px;
+  }
+  .comments{
+    border-top: 3px solid;
+    padding-top: 20px;
+  }
+
+  .comment-content{
+    width:90%;
+    max-width: 100%;
+    display:flex;
+    flex-grow: 1;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .each-comment{
+    display: flex;
+    width: inherit;
+    max-width: 100%;   
+  }
+
+  .comment-votes{
+    color: grey;
+    display:flex;
+    flex-direction: column;
+    width: 10%;
+    max-width: 100%;
+    text-align: right;
+      
+
+  }
+
+  .comvotes{
+    text-align: right;
+    margin:0px;
+    padding:0px;
+
+  }
